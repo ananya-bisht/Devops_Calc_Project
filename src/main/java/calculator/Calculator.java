@@ -32,7 +32,7 @@ public class Calculator {
                     // Factorial
                     System.out.print("Enter a number : ");
                     number1 = scanner.nextDouble();
-                    System.out.println("Factorial of "+number1+" is : " + calculator.factoral(number1));
+                    System.out.println("Factorial of "+number1+" is : " + calculator.factorial(number1));
                     System.out.println("\n");
 
                     break;
@@ -40,7 +40,7 @@ public class Calculator {
                     // Square root
                     System.out.print("Enter a number : ");
                     number1 = scanner.nextDouble();
-                    System.out.println("Square root of "+number1+" is : " + calculator.sqroot(number1));
+                    System.out.println("Square root of "+number1+" is : " + calculator.squareRoot(number1));
                     System.out.println("\n");
 
 
@@ -70,7 +70,7 @@ public class Calculator {
     }
 
 
-    public double factoral(double number1) {
+    public double factorial(double number1) {
         logger.info("[FACTORIAL] - " + number1);
         double result = fact(number1);
         logger.info("[RESULT - FACTORIAL] - " + result);
@@ -79,7 +79,7 @@ public class Calculator {
 
 
 
-    public double sqroot(double number1) {
+    public double squareRoot(double number1) {
         logger.info("[SQ ROOT] - " + number1);
         double result = Math.sqrt(number1);
         logger.info("[RESULT - SQ ROOT] - " + result);
